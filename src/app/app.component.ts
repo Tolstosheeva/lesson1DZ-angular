@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
+  list = [{
+    name:'Уборка',
+    done:true,
+  },{name:'Покупка продуктов',
+  done:true,
+  },{
+    name:'Поездка к врачу',
+    done:false,
+  },{name:'Приготовление ужина',
+  done:true,
+  },{
+    name:'Организовать вечеринку',
+    done:true,
+  }]
 }

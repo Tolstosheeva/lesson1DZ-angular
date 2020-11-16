@@ -1,0 +1,13 @@
+
+<div id="myDIV" class="header">
+    <h2>Список дел</h2>
+   
+  </div>
+  <div *ngFor="let task of list">
+  <ul id="myUL">
+    <li>{{task.name}}</li>
+    <li>{{task.done}}</li>
+  </ul>
+</div>
+
+  
