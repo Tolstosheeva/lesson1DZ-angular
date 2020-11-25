@@ -1,13 +1,25 @@
 
 <div id="myDIV" class="header">
-    <h2>Список дел</h2>
-   
-  </div>
-  <div *ngFor="let task of list">
-  <ul id="myUL">
-    <li>{{task.name}}</li>
-    <li>{{task.done}}</li>
-  </ul>
+  <h2>Список дел</h2>
+ 
+</div>
+<div *ngFor="let task of list">
+<ul id="myUL">
+  <li>{{task.name}}</li>
+  <li>{{task.isDone}}</li>
+  
+</ul>
+<ul>
+  <li>
+    <input type="radio" checked name="isCompleted" />
+    <span>Запланированно</span>
+  </li>
+  <li>
+    <input type="radio" checked name="isCompleted" />
+    <span><del>Задание выполнено</del></span>
+  </li>
+</ul>
+<button (click)="addTask()">Добавить</button>
 </div>
 
   
